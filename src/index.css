@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.button-hover-color {
+  background: linear-gradient(
+    91deg,
+    #0bb18a -2.62%,
+    #3cc7a5 -2.61%,
+    #16c2a3 110.7%
+  );
+}
+
+.card-bg {
+  background: linear-gradient(176deg, #212d3e -88.14%, #0e1621 196.44%);
+}
+
+img {
+  pointer-events: none;
+  user-select: none;
+}
+
+.hideMenuNav {
+  display: flex;
+  left: -100%;
+  opacity: 0;
+  position: absolute;
+  transition: 0.2s ease;
+  height: 100dvh;
+  top: 0;
+}
+
+.showMenuNav {
+  display: flex;
+  position: absolute;
+  width: 80%;
+  height: 100dvh;
+  top: 0;
+  left: 0;
+  background: #0e1621;
+  z-index: 30;
+  padding: 0px 45px 40px 23px;
+  opacity: 1;
+  transition: 0.2s ease;
+}
+
+.showBgMenuNav {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100dvh;
+  filter: blur(4px);
+  background: #090e12d9;
+}
